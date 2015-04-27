@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph DataVirtualized="True" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 Namespace=Zuma.GameEngine Type=Bezier Member=(Name=AbsoluteBezierPoints OverloadingParameters=[(@2 @3 Type=String),(@2 @3 Type=Boolean)]))" Category="CodeSchema_Method" Bounds="-141.40576135173,-46.5518442885477,147.503333333333,25.96" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsStatic="True" CommonLabel="AbsoluteBezierPoints" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Method" Label="AbsoluteBezierPoints" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=&quot;file:///e:/zumagame/zumagame/zuma/zuma.gameengine/auxiliary classes/bezierpoints.cs&quot; StartLineNumber=9 StartCharacterOffset=2 EndLineNumber=9 EndCharacterOffset=2)" UseManualLocation="True" />
+    <Node Id="(@4 @5 @6 Member=(Name=buttonOpenBezierSVG_Click OverloadingParameters=[(@2 @3 Type=Object),(@2 @3 Type=EventArgs)]))" Category="CodeSchema_Method" Bounds="-92.0710500318356,-102.518041880886,184.693333333333,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="buttonOpenBezierSVG_Click" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Method" Label="buttonOpenBezierSVG_Click" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///e:/zumagame/zumagame/zuma/zuma.desktopui/mainform.cs StartLineNumber=126 StartCharacterOffset=8 EndLineNumber=126 EndCharacterOffset=8)" UseManualLocation="True" />
+    <Node Id="(@4 @5 @6 Member=DrawBezier)" Category="CodeSchema_Method" Bounds="218.876085233747,255.212302847085,95.3066666666667,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="DrawBezier" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Method" Label="DrawBezier" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///e:/zumagame/zumagame/zuma/zuma.desktopui/mainform.cs StartLineNumber=163 StartCharacterOffset=8 EndLineNumber=163 EndCharacterOffset=8)" UseManualLocation="True" />
+    <Node Id="@10" Category="CodeSchema_Field" Bounds="-159.406149837506,196.400494388414,68.8333333333333,25.96" CodeSchemaProperty_IsPrivate="True" DelayedCrossGroupLinksState="Fetched" Label="_qPen" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///e:/zumagame/zumagame/zuma/zuma.desktopui/mainform.cs StartLineNumber=29 StartCharacterOffset=12 EndLineNumber=29 EndCharacterOffset=12)" UseManualLocation="True" />
+    <Node Id="@11" Category="CodeSchema_Field" Bounds="240.027129493922,147.383270362566,105.273333333333,25.96" CodeSchemaProperty_IsPrivate="True" DelayedCrossGroupLinksState="Fetched" Label="_selectedPen" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///e:/zumagame/zumagame/zuma/zuma.desktopui/mainform.cs StartLineNumber=25 StartCharacterOffset=12 EndLineNumber=25 EndCharacterOffset=12)" UseManualLocation="True" />
+    <Node Id="@12" Category="CodeSchema_Method" Bounds="-388.439216605026,139.047588921074,128.083333333333,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="LoadTexturedPen" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Method" Label="LoadTexturedPen" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///e:/zumagame/zumagame/zuma/zuma.desktopui/mainform.cs StartLineNumber=47 StartCharacterOffset=8 EndLineNumber=47 EndCharacterOffset=8)" UseManualLocation="True" />
+    <Node Id="@7" Category="CodeSchema_Method" Bounds="-92.2492778637162,257.265060905191,175.083333333333,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="buttonPenProperties_Click" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Method" Label="buttonPenProperties_Click" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///e:/zumagame/zumagame/zuma/zuma.desktopui/mainform.cs StartLineNumber=561 StartCharacterOffset=8 EndLineNumber=561 EndCharacterOffset=8)" UseManualLocation="True" />
+    <Node Id="@8" Category="CodeSchema_Method" Bounds="-94.0038906733479,132.435154991777,207.87,25.96" CodeSchemaProperty_IsPrivate="True" CommonLabel="buttonReleaseTexturedPen_Click" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Method" Label="buttonReleaseTexturedPen_Click" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///e:/zumagame/zumagame/zuma/zuma.desktopui/mainform.cs StartLineNumber=574 StartCharacterOffset=8 EndLineNumber=574 EndCharacterOffset=8)" UseManualLocation="True" />
+    <Node Id="@9" Category="CodeSchema_Method" Bounds="-142.493846943001,14.5537919763931,89.98,25.96" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CommonLabel="MainForm" DelayedCrossGroupLinksState="Fetched" FunctionTypeFlags="Constructor" Label="MainForm" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///e:/zumagame/zumagame/zuma/zuma.desktopui/mainform.cs StartLineNumber=34 StartCharacterOffset=8 EndLineNumber=34 EndCharacterOffset=8)" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="(@4 @5 @6 Member=(Name=buttonOpenBezierSVG_Click OverloadingParameters=[(@2 @3 Type=Object),(@2 @3 Type=EventArgs)]))" Target="(@1 Namespace=Zuma.GameEngine Type=Bezier Member=(Name=AbsoluteBezierPoints OverloadingParameters=[(@2 @3 Type=String),(@2 @3 Type=Boolean)]))" Category="CodeSchema_Calls" Bounds="-44.9532847540108,-76.558041880886,29.474254997554,24.2833650699906" Weight="1" />
+    <Link Source="(@4 @5 @6 Member=DrawBezier)" Target="@11" Category="CodeSchema_FieldRead" Bounds="269.675363711422,182.090032627816,17.7225462973459,73.1222702192685" Weight="1" />
+    <Link Source="@12" Target="@10" Category="CodeSchema_FieldWrite" Bounds="-279.267893826866,165.00759552002,111.212382607636,31.9864312959857" Weight="1" />
+    <Link Source="@7" Target="@10" Category="CodeSchema_FieldReference" Bounds="-91.2882701924094,226.424694872816,60.9346624984458,30.8403660323749" Weight="2">
+      <Category Ref="CodeSchema_FieldRead" />
+    </Link>
+    <Link Source="@7" Target="@11" Category="CodeSchema_FieldReference" Bounds="30.4199640676147,176.462713535003,218.67415553219,80.8023473701878" Weight="3">
+      <Category Ref="CodeSchema_FieldRead" />
+      <Category Ref="CodeSchema_FieldWrite" />
+    </Link>
+    <Link Source="@8" Target="@10" Category="CodeSchema_FieldWrite" Bounds="-89.4787337563895,158.395153503418,72.031419314099,34.14982710112" Weight="1" />
+    <Link Source="@8" Target="@11" Category="CodeSchema_FieldWrite" Bounds="113.866091308594,150.910211199587,117.173590507549,6.19498379089075" Weight="1" />
+    <Link Source="@8" Target="@12" Category="CodeSchema_Calls" Bounds="-251.357645617037,147.470807943272,157.35373692563,3.11218461479595" Weight="1" />
+    <Link Source="@9" Target="@10" Category="CodeSchema_FieldWrite" Bounds="-121.682543130653,40.5137919763931,22.2168043661058,146.987778584415" Weight="1" />
+    <Link Source="@9" Target="@11" Category="CodeSchema_FieldWrite" Bounds="-59.37694868958,40.5137919763931,305.39404041694,103.968977970984" Weight="1" />
+    <Link Source="@9" Target="@12" Category="CodeSchema_Calls" Bounds="-292.850796809427,40.5137919763931,171.690508042353,94.2044797338034" Weight="1" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Calls" Label="Calls" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Called By" OutgoingActionLabel="Calls" />
+    <Category Id="CodeSchema_Field" Label="Field" BasedOn="CodeSchema_Member" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Field" NavigationActionLabel="Fields" />
+    <Category Id="CodeSchema_FieldRead" Label="Field Read" BasedOn="CodeSchema_FieldReference" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Read By" OutgoingActionLabel="Reads Fields" />
+    <Category Id="CodeSchema_FieldReference" Label="Field Reference" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Referenced By" OutgoingActionLabel="References Fields" />
+    <Category Id="CodeSchema_FieldWrite" Label="Field Write" BasedOn="CodeSchema_FieldReference" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Written By" OutgoingActionLabel="Writes Fields" />
+    <Category Id="CodeSchema_Member" Label="Member" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Field" NavigationActionLabel="Members" />
+    <Category Id="CodeSchema_Method" Label="Method" BasedOn="CodeSchema_Member" CanBeDataDriven="True" DefaultAction="Link:Forward:CodeSchema_Calls" Icon="CodeSchema_Method" NavigationActionLabel="Methods" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsConstructor" Label="Is Constructor" Description="Flag to indicate the method is a constructor" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPrivate" Label="Is Private" Description="Flag to indicate the scope is Private" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPublic" Label="Is Public" Description="Flag to indicate the scope is Public" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsStatic" Label="Is Static" Description="Flag to indicate the member is a static member" DataType="System.Boolean" />
+    <Property Id="CommonLabel" DataType="System.String" />
+    <Property Id="DataVirtualized" Label="Data Virtualized" Description="If true, the graph can contain nodes and links that represent data for virtualized nodes/links (i.e. not actually created in the graph)." DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="DelayedCrossGroupLinksState" Label="Delayed Cross-Group Links State" Description="Unspecified if the delayed cross-group links state is not specified. NotFetched if delayed cross-group links on this node are not fetched into the graph yet. Fetched if all delayed cross-group links have already fetched." DataType="Microsoft.VisualStudio.GraphModel.DelayedDataState" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="FunctionTypeFlags" Label="FunctionTypeFlags" Description="FunctionTypeFlags" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="Icon" Label="Icon" Description="Icon" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="Language" Label="Language" Description="Language" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="SourceLocation" Label="Start Line Number" DataType="Microsoft.VisualStudio.GraphModel.CodeSchema.SourceLocation" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="Visibility" Label="Visibility" Description="Defines whether a node in the graph is visible or not" DataType="System.Windows.Visibility" />
+    <Property Id="Weight" Label="Weight" Description="Weight" DataType="System.Double" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+    <Name Id="Member" Label="Member" ValueType="System.Object" />
+    <Name Id="Name" Label="Name" ValueType="System.String" />
+    <Name Id="Namespace" Label="Namespace" ValueType="System.String" />
+    <Name Id="OverloadingParameters" Label="Parameter" ValueType="Microsoft.VisualStudio.GraphModel.GraphNodeIdCollection" Formatter="NameValueNoEscape" />
+    <Name Id="Type" Label="Type" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(020a1e88-13af-434b-94e7-4affa98e3f1f.OutputPathUri)" />
+    <Alias n="2" Uri="Assembly=$(FxReferenceAssembliesUri)/.NETFramework/v4.5.1/mscorlib.dll" />
+    <Alias n="3" Id="Namespace=System" />
+    <Alias n="4" Uri="Assembly=$(eef1b6f6-260c-4e2a-ab53-9a6648faa442.OutputPathUri)" />
+    <Alias n="5" Id="Namespace=Zuma.DesktopUI" />
+    <Alias n="6" Id="Type=MainForm" />
+    <Alias n="7" Id="(@4 @5 @6 Member=(Name=buttonPenProperties_Click OverloadingParameters=[(@2 @3 Type=Object),(@2 @3 Type=EventArgs)]))" />
+    <Alias n="8" Id="(@4 @5 @6 Member=(Name=buttonReleaseTexturedPen_Click OverloadingParameters=[(@2 @3 Type=Object),(@2 @3 Type=EventArgs)]))" />
+    <Alias n="9" Id="(@4 @5 @6 Member=.ctor)" />
+    <Alias n="10" Id="(@4 @5 @6 Member=_qPen)" />
+    <Alias n="11" Id="(@4 @5 @6 Member=_selectedPen)" />
+    <Alias n="12" Id="(@4 @5 @6 Member=LoadTexturedPen)" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Results" ValueLabel="True">
+      <Condition Expression="HasCategory('QueryResult')" />
+      <Setter Property="Background" Value="#FFBCFFBE" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Assembly" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Assembly')" />
+      <Setter Property="Background" Value="#FF094167" />
+      <Setter Property="Stroke" Value="#FF094167" />
+      <Setter Property="Icon" Value="CodeSchema_Assembly" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Namespace" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Namespace')" />
+      <Setter Property="Background" Value="#FF0E619A" />
+      <Setter Property="Stroke" Value="#FF0E619A" />
+      <Setter Property="Icon" Value="CodeSchema_Namespace" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Interface" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Interface')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Interface" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Struct" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Struct')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Struct" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Enumeration" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Enum')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Enum" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Delegate" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Delegate')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Delegate" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Class" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Type')" />
+      <Setter Property="Background" Value="#FF1382CE" />
+      <Setter Property="Stroke" Value="#FF1382CE" />
+      <Setter Property="Icon" Value="CodeSchema_Class" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Property" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Property')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Property" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Method" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Method') Or HasCategory('CodeSchema_CallStackUnresolvedMethod')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Method" />
+      <Setter Property="LayoutSettings" Value="List" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Event" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Event')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Event" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Field')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+      <Setter Property="Stroke" Value="#FFE0E0E0" />
+      <Setter Property="Icon" Value="CodeSchema_Field" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Out Parameter" ValueLabel="Has category">
+      <Condition Expression="CodeSchemaProperty_IsOut = 'True'" />
+      <Setter Property="Icon" Value="CodeSchema_OutParameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Parameter" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Parameter')" />
+      <Setter Property="Icon" Value="CodeSchema_Parameter" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Local Variable" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_LocalExpression')" />
+      <Setter Property="Icon" Value="CodeSchema_LocalExpression" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Externals" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Externals')" />
+      <Setter Property="Background" Value="#FF424242" />
+      <Setter Property="Stroke" Value="#FF424242" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Inherits From" ValueLabel="Has category">
+      <Condition Expression="HasCategory('InheritsFrom')" />
+      <Setter Property="Stroke" Value="#FF00A600" />
+      <Setter Property="StrokeDashArray" Value="2 0" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Implements" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Implements')" />
+      <Setter Property="Stroke" Value="#8000A600" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Calls" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_Calls')" />
+      <Setter Property="Stroke" Value="#FFFF00FF" />
+      <Setter Property="StrokeDashArray" Value="2 0" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Function Pointer" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_FunctionPointer')" />
+      <Setter Property="Stroke" Value="#FFFF00FF" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Field Reference" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_FieldReference')" />
+      <Setter Property="Stroke" Value="#FF00AEEF" />
+      <Setter Property="DrawArrow" Value="true" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Inherits From" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('InheritsFrom') And Target.HasCategory('CodeSchema_Class')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Implements" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="HasCategory('Implements') And Target.HasCategory('CodeSchema_Interface')" />
+      <Setter Property="TargetDecorator" Value="OpenArrow" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Field Read" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Target.HasCategory('CodeSchema_Field') And HasCategory('CodeSchema_FieldRead')" />
+      <Setter Property="StrokeDashArray" Value="2 2" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Comment Link" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="Source.HasCategory('Comment')" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Cursor Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCursorLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Disabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="DisabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Enabled Breakpoint Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="EnabledBreakpointCount" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Instruction Pointer Location Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsInstructionPointerLocation" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Current Callstack Changed" ValueLabel="True" Visibility="Hidden">
+      <Condition Expression="IsCurrentCallstackFrame" />
+      <Setter Property="IndicatorWest" Value="WestIndicator" />
+    </Style>
+  </Styles>
+  <Paths>
+    <Path Id="020a1e88-13af-434b-94e7-4affa98e3f1f.OutputPath" Value="E:\ZumaGame\zumagame\Zuma\Zuma.GameEngine\bin\Debug\Zuma.GameEngine.dll" />
+    <Path Id="020a1e88-13af-434b-94e7-4affa98e3f1f.OutputPathUri" Value="file:///E:/ZumaGame/zumagame/Zuma/Zuma.GameEngine/bin/Debug/Zuma.GameEngine.dll" />
+    <Path Id="eef1b6f6-260c-4e2a-ab53-9a6648faa442.OutputPath" Value="E:\ZumaGame\zumagame\Zuma\Zuma.DesktopUI\bin\Debug\Zuma.DesktopUI.exe" />
+    <Path Id="eef1b6f6-260c-4e2a-ab53-9a6648faa442.OutputPathUri" Value="file:///E:/ZumaGame/zumagame/Zuma/Zuma.DesktopUI/bin/Debug/Zuma.DesktopUI.exe" />
+    <Path Id="FxReferenceAssemblies" Value="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework" />
+    <Path Id="FxReferenceAssembliesUri" Value="file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework" />
+  </Paths>
+</DirectedGraph>
