@@ -19,11 +19,13 @@ namespace Zuma.GameEngine
             set
             {
                 if (value < 1)
+                {
                     throw new InvalidOperationException("Bonus cannot be zero or negative.");
+                }
                 _value = value;
             }
         }
-
+        
         public BonusState State { get; set; }
 
         #endregion

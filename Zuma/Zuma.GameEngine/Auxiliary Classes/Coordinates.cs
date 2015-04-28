@@ -1,5 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
+// Коректний в даному випадку namespace буде Zuma.GameEngine.Auxiliary_Classes.
 namespace Zuma.GameEngine
 {
     public struct PointF
@@ -10,8 +11,9 @@ namespace Zuma.GameEngine
         public PointF(float x, float y)
             : this()
         {
-            X = x;
-            Y = y;
+            // Для підвищення читабельності коду, варто використовувати this.
+            this.X = x;
+            this.Y = y;
         }
 
         public static PointF Add(PointF p1, PointF p2)
@@ -43,22 +45,34 @@ namespace Zuma.GameEngine
             }
 
             string matchFloat = @"-?\d+,?\d*";
-
+            // Зайві пропуски.
             MatchCollection matches = Regex.Matches(str, matchFloat);
-
-            PointF[] result = new PointF[matches.Count / 2];
-
-            for (int i = 0; i < result.Length; i++)
+            // Варто використати var.
+            var result = new PointF[matches.Count / 2];
+            for (var i = 0; i < result.Length; i++)
             {
+                // Варто додати перевірку конвертування, використавши TryParse.
                 result[i].X = float.Parse(matches[i * 2].Value);
                 result[i].Y = float.Parse(matches[i * 2 + 1].Value);
             }
 
             return result;
         }
-
     }
 
+    // Для структур Size та SizeF доцільно використати одну шаблонну структуру.
+    // public struct Size<T>
+    // {
+    //     public T Width { get; set; }
+    //     public T Height { get; set; }
+
+    //     public Size(T width, T height)
+    //         : this()
+    //     {
+    //         Width = width;
+    //         Height = height;
+    //     }
+    // }
     public struct Size
     {
         public int Width { get; set; }
@@ -87,11 +101,15 @@ namespace Zuma.GameEngine
 
     public static class PointFEx
     {
+        // Варто задуматись між створенням власної структури Point та використанням System.Drawing.PointF.
+        // Використання System.Drawing.PointF вимагатиме наявності в користувача бібліотеки System.Drawing.
+        // Якщо вже використовувати System.Drawing.PointF, то варто додати простір імен System.Drawing через using.
         public static System.Drawing.PointF Multiply(this System.Drawing.PointF p, float k)
         {
             return new System.Drawing.PointF(p.X * k, p.Y * k);
         }
-
+        // Можна залишити лише дану реалізацію методу Multiply(this System.Drawing.PointF p, double k).
+        // float завжди приведеться до double.
         public static System.Drawing.PointF Multiply(this System.Drawing.PointF p, double k)
         {
             return Multiply(p, (float)k);

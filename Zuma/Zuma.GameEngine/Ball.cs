@@ -24,10 +24,12 @@ namespace Zuma.GameEngine
 
 
         #region                        - Constructors
-
+        // Координати варто передавати через конструктор з параметрами.
+        // В такому випадку властивість Centre можна зробити обмеженою на запис.
         public Ball()
         {
-            Centre = new PointF(-1, -1);
+            // Використовувати this для підвищення читабельності коду.
+            this.Centre = new PointF(-1, -1);
         }
 
         #endregion
@@ -42,16 +44,17 @@ namespace Zuma.GameEngine
 
             if (direction == MovingDirection.Forward)
             {
-                if (_pathIndex < path.Points.Length - 1)
+                // Використовувати this для підвищення читабельності коду.
+                if (this._pathIndex < path.Points.Length - 1)
                 {
-                    Centre = path.Points[++_pathIndex];
+                    this.Centre = path.Points[++this._pathIndex];
                 }
             }
             else
             {
-                if (_pathIndex > 0)
+                if (this._pathIndex > 0)
                 {
-                    Centre = path.Points[--_pathIndex];
+                    this.Centre = path.Points[--this._pathIndex];
                 }
             }
         }

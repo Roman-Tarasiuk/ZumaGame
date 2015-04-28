@@ -6,7 +6,9 @@ namespace Zuma.GameEngine
     {
         #region                        - Fields
 
-        private PointF[] _points;
+        // Дане поле варто зробити доступним для читання.
+        private readonly PointF[] _points;
+        // Варто змінити ім'я на _pointsSvg.
         private PointF[] _pointsSVG;
 
         #endregion
@@ -18,8 +20,11 @@ namespace Zuma.GameEngine
         {
             get
             {
+                // Пропущено дужки.
                 if (_pointsSVG == null)
+                {
                     throw new InvalidOperationException("Object is not initialized");
+                }
                 return _points;
             }
         }
@@ -34,7 +39,9 @@ namespace Zuma.GameEngine
             get
             {
                 if (_pointsSVG == null)
+                {
                     throw new InvalidOperationException("Object is not initialized");
+                }
                 return _pointsSVG;
             }
         }
@@ -55,6 +62,7 @@ namespace Zuma.GameEngine
 
         #region                        - Methods
 
+        // Назву методу варто змінити на SetPointsSvg.
         public void SetPointsSVG(params PointF[] points)
         {
             _pointsSVG = points;

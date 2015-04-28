@@ -17,6 +17,8 @@ namespace Zuma.GameEngine
 
         #region                        - IPath interface members
 
+        // Варто використати auto-property.
+        // public PointF[] Points { get; private set; }
         public PointF[] Points
         {
             get { return _points; }
@@ -29,7 +31,7 @@ namespace Zuma.GameEngine
 
         public LinePath(IField field, PointF p1, PointF p2)
         {
-            CalculatePath(field, p1, p2);
+            this.CalculatePath(field, p1, p2);
         }
 
         #endregion
@@ -41,47 +43,48 @@ namespace Zuma.GameEngine
         {
             if (Math.Abs(p2.X - p1.X) > Math.Abs(p2.Y - p1.Y))
             {
-                float xE = EdgeX(field, p1, p2);
-                int length = (int)Math.Abs(p1.X - xE);
+                // Доцільніше використовувати var.
+                var xE = this.EdgeX(field, p1, p2);
+                var length = (int)Math.Abs(p1.X - xE);
                 _points = new PointF[length];
 
                 if (xE < p1.X)
                 {
-                    for (float x = p1.X; x > xE; x -= 1F)
+                    for (var x = p1.X; x > xE; x -= 1F)
                     {
                         _points[(int)(p1.X - x)].X = x;
-                        _points[(int)(p1.X - x)].Y = LineEquationY(p1, p2, x);
+                        _points[(int)(p1.X - x)].Y = this.LineEquationY(p1, p2, x);
                     }
                 }
                 else
                 {
-                    for (float x = p1.X; x < xE; x += 1F)
+                    for (var x = p1.X; x < xE; x += 1F)
                     {
                         _points[(int)(x - p1.X)].X = x;
-                        _points[(int)(x - p1.X)].Y = LineEquationY(p1, p2, x);
+                        _points[(int)(x - p1.X)].Y = this.LineEquationY(p1, p2, x);
                     }
                 }
             }
             else
             {
-                float yE = EdgeY(field, p1, p2);
-                int length = (int)Math.Abs(p1.Y - yE);
-                _points = new PointF[length];
+                var yE = this.EdgeY(field, p1, p2);
+                var length = (int)Math.Abs(p1.Y - yE);
+                this._points = new PointF[length];
 
                 if (yE < p1.Y)
                 {
-                    for (float y = p1.Y; y > yE; y -= 1F)
+                    for (var y = p1.Y; y > yE; y -= 1F)
                     {
-                        _points[(int)(p1.Y - y)].Y = y;
-                        _points[(int)(p1.Y - y)].X = LineEquationX(p1, p2, y);
+                        this._points[(int)(p1.Y - y)].Y = y;
+                        this._points[(int)(p1.Y - y)].X = this.LineEquationX(p1, p2, y);
                     }
                 }
                 else
                 {
-                    for (float y = p1.Y; y < yE; y += 1F)
+                    for (var y = p1.Y; y < yE; y += 1F)
                     {
-                        _points[(int)(y - p1.Y)].Y = y;
-                        _points[(int)(y - p1.Y)].X = LineEquationX(p1, p2, y);
+                        this._points[(int)(y - p1.Y)].Y = y;
+                        this._points[(int)(y - p1.Y)].X = this.LineEquationX(p1, p2, y);
                     }
                 }
             }
@@ -108,13 +111,19 @@ namespace Zuma.GameEngine
             if (p1.Y < p2.Y)
             {
                 if (p1.X == p2.X)
+                {
                     return field.Size.Height - 1;
+                }
 
                 float Y;
                 if (p1.X < p2.X)
+                {
                     Y = LineEquationY(p1, p2, field.Size.Width - 1);
+                }
                 else
+                {
                     Y = LineEquationY(p1, p2, 0);
+                }
 
                 return Math.Min(Y, field.Size.Height - 1);
             }

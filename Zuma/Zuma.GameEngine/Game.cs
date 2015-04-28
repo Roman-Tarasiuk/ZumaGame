@@ -7,7 +7,7 @@ namespace Zuma.GameEngine
         #region                        - Fields
 
         private GameConfig _config = null;
-
+        // Об'єкт даного класу не є створений за допомогою оператора new.
         private Frog _frog;
         private IField _field;
         private PointF[] _bonusLocations;
@@ -15,7 +15,7 @@ namespace Zuma.GameEngine
 
         private GameStatus _status;
         private GameResult _gameResult;
-
+        // Дане поле ініціалізоване, проте ніколи не використовується.
         private bool _initSequenceStarted;
 
         #endregion
@@ -32,9 +32,11 @@ namespace Zuma.GameEngine
         {
             get
             {
-                if (_status != GameStatus.Over)
+                if (this._status != GameStatus.Over)
+                {
                     return GameResult.Undetermined;
-                return _gameResult;
+                }
+                return this._gameResult;
             }
         }
 
@@ -45,7 +47,7 @@ namespace Zuma.GameEngine
 
         public Game()
         {
-            _status = GameStatus.Created;
+            this._status = GameStatus.Created;
         }
 
         public Game(string configPath)
@@ -61,12 +63,18 @@ namespace Zuma.GameEngine
 
         public void LoadConfig(string configPath)
         {
-            if (_status == GameStatus.Playing || _status == GameStatus.Paused)
+            // Пропущено фігурні дужки.
+            // Варто використовувати ключове слово this.
+            if (this._status == GameStatus.Playing || this._status == GameStatus.Paused)
+            {
                 throw new InvalidOperationException("Game is now playing or paused.");
+            }
 
             if (_config == null)
+            {
                 _config = new GameConfig();
-            
+            }
+
             _config.Load(configPath);
 
             _frog.Location = _config.FrogLocation;
@@ -79,24 +87,26 @@ namespace Zuma.GameEngine
 
         public void Play()
         {
-            if (_status != GameStatus.Initialized)
+            if (this._status != GameStatus.Initialized)
+            {
                 throw new InvalidOperationException("Game is not initialized or already playing.");
+            }
 
-            _initSequenceStarted = false;
-
+            this._initSequenceStarted = false;
+            // Зайві пропуски.
 
         }
 
         public void Pause()
         {
-
+            // Пропущена реалізація метода.
         }
 
         #endregion
 
 
         #region                        - Helper Methods
-        
+        // Непотрібні методи.
         private void GameLyfeCycle()
         {
 

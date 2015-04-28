@@ -2,12 +2,15 @@
 
 namespace Zuma.GameEngine
 {
-    static class BallGenerator
+    // Варто явно вказувати модифікатор доступу.
+    internal static class BallGenerator
     {
         #region                        - Class members
 
-        private static int _colorsCount;
-        private static BallColor[] _colors;
+        // Дані поля можна зробити доступними лише для читання.
+        // Відповідно потрібно змінити імена на ColorsCount та Colors
+        private static readonly int _colorsCount;
+        private static readonly BallColor[] _colors;
 
         #endregion
 
@@ -16,8 +19,15 @@ namespace Zuma.GameEngine
 
         public static Ball NewBall()
         {
-            Random rnd = new Random();
-            return new Ball() { Type = BallType.Normal, Color = _colors[rnd.Next(_colorsCount)] };
+            // Доцільно використати var.
+            var rnd = new Random();
+            // Занадто довга конструкція.
+            var ball = new Ball()
+            {
+                Type = BallType.Normal,
+                Color = _colors[rnd.Next(_colorsCount)]
+            };
+            return ball;
         }
         
         #endregion

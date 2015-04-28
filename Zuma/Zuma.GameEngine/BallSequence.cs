@@ -9,9 +9,9 @@ namespace Zuma.GameEngine
     public class BallSequence
     {
         #region                        - Fields
-
-        private bool _hasHoles = false;
-        private PointF _firstMovingBall;
+        // Дані поля ніколи не використовуються.
+        //private bool _hasHoles = false;
+        //private PointF _firstMovingBall;
         
         #endregion
 
@@ -37,10 +37,13 @@ namespace Zuma.GameEngine
 
         public void Move()
         {
+            // Пропущено фігурні дужки.
             if (Balls.Count == 0)
+            {
                 throw new InvalidOperationException("No balls in sequence.");
+            }
 
-
+            // Даний метод недостатньо наповнений функціональністю .
         }
 
         #endregion

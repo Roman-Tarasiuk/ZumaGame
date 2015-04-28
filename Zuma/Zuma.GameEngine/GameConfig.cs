@@ -21,8 +21,8 @@ namespace Zuma.GameEngine
         {
             get
             {
-                CheckObjectIsInitialized();
-                return _field;
+                this.CheckObjectIsInitialized();
+                return this._field;
             }
         }
 
@@ -30,8 +30,8 @@ namespace Zuma.GameEngine
         {
             get
             {
-                CheckObjectIsInitialized();
-                return _frogLocation;
+                this.CheckObjectIsInitialized();
+                return this._frogLocation;
             }
         }
 
@@ -39,8 +39,8 @@ namespace Zuma.GameEngine
         {
             get
             {
-                CheckObjectIsInitialized();
-                return _bonusLocations;
+                this.CheckObjectIsInitialized();
+                return this._bonusLocations;
             }
         }
 
@@ -48,8 +48,8 @@ namespace Zuma.GameEngine
         {
             get
             {
-                CheckObjectIsInitialized();
-                return _path;
+                this.CheckObjectIsInitialized();
+                return this._path;
             }
         }
 
@@ -64,15 +64,15 @@ namespace Zuma.GameEngine
 
         public GameConfig(IField field, PointF frogLocatioin, PointF[] bonusLocations, IPath path)
         {
-            _field = field;
-            _frogLocation = frogLocatioin;
-            _bonusLocations = bonusLocations;
-            _path = path;
+            this._field = field;
+            this._frogLocation = frogLocatioin;
+            this._bonusLocations = bonusLocations;
+            this._path = path;
         }
 
         public GameConfig(string filePath)
         {
-            Load(filePath);
+            this.Load(filePath);
         }
 
         #endregion
@@ -83,28 +83,31 @@ namespace Zuma.GameEngine
         private void CheckObjectIsInitialized()
         {
             if (_field == null || _path == null || _bonusLocations == null)
+            {
                 throw new InvalidOperationException("Object is not initialized");
+            }
         }
 
         public void Load(string filePath)
         {
             StreamReader reader = null;
-
             try
             {
+                // Доцільно використати конструкцію using.
                 reader = new StreamReader(filePath);
-
                 char[] coordSeparator = { ':' };
                 string line;
 
                 // Field
                 //
                 line = reader.ReadLine();
+                // line може бути null. Тут необхідно виконати перевірку.
                 if (line.StartsWith("Field: "))
                 {
                     line = line.Substring("Field: ".Length);
 
-                    PointF[] coords = PointF.Points(line, true);
+                    // Використання var.
+                    var coords = PointF.Points(line, true);
                     _field = new Field((int)coords[0].X, (int)coords[0].Y);
                 }
                 else
@@ -115,11 +118,11 @@ namespace Zuma.GameEngine
                 // Frog Location
                 //
                 line = reader.ReadLine();
+                // line може бути null. Тут необхідно виконати перевірку.
                 if (line.StartsWith("FrogLocation: "))
                 {
                     line = line.Substring("FrogLocation: ".Length);
-
-                    PointF[] coords = PointF.Points(line, true);
+                    var coords = PointF.Points(line, true);
                     _frogLocation = coords[0];
                 }
                 else
@@ -129,6 +132,7 @@ namespace Zuma.GameEngine
 
                 // Bonus Locations
                 //
+                // line може бути null. Тут необхідно виконати перевірку.
                 line = reader.ReadLine();
                 if (line.StartsWith("BonusLocations: "))
                 {
@@ -143,13 +147,14 @@ namespace Zuma.GameEngine
 
                 // Path
                 //
+                // line може бути null. Тут необхідно виконати перевірку.
                 line = reader.ReadLine();
                 if (line.StartsWith("BezierCombinedPath: "))
                 {
                     line = line.Substring("BezierCombinedPath: ".Length);
 
                     string[] bezCombSeparator = { "==" };
-                    string[] bezCombParts = line.Split(bezCombSeparator, StringSplitOptions.None);
+                    var bezCombParts = line.Split(bezCombSeparator, StringSplitOptions.None);
 
                     _path = new BezierCombinedPath(PointF.Points(bezCombParts[0], true));
                     ((BezierCombinedPath)_path).SetPointsSVG(PointF.Points(bezCombParts[1], true));
@@ -167,7 +172,9 @@ namespace Zuma.GameEngine
             finally
             {
                 if (reader != null)
+                {
                     reader.Close();
+                }
             }
         }
 
