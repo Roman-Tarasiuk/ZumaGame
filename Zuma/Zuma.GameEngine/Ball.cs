@@ -37,6 +37,11 @@ namespace Zuma.GameEngine
 
         public void Move(IPath path, MovingDirection direction)
         {
+            /*			
+			    Review VV:
+			        1) використати фігрні дужки
+                    2) валідацію рекомендується брати у регіон Validation
+		    */
             if (path == null)
                 throw new NullReferenceException("Path not initialized. Use 'SetPath' method.");
 

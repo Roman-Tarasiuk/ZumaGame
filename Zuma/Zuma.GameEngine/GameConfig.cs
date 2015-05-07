@@ -82,12 +82,24 @@ namespace Zuma.GameEngine
 
         private void CheckObjectIsInitialized()
         {
+            /*			
+			    Review VV:
+			        використати фігурні дужки
+		    */
             if (_field == null || _path == null || _bonusLocations == null)
                 throw new InvalidOperationException("Object is not initialized");
         }
 
+        /*			
+			Review VV:
+			    для конфігурації краще скористатися одним із стандартних форматів, наприклад XML
+		*/
         public void Load(string filePath)
         {
+            /*			
+			    Review VV:
+			        для закриття StreamReader reader замість конструкції try-finally краще скористатися using
+		    */
             StreamReader reader = null;
 
             try

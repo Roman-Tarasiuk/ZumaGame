@@ -85,6 +85,13 @@ namespace Zuma.GameEngine
         }
     }
 
+    /*			
+		Review VV:
+		    Думаю, тут слід використовувати Zuma.GameEngine.PointF,
+            а не System.Drawing.PointF
+            
+            Поточна зборка не повинна місти посилання на System.Drawing
+	*/
     public static class PointFEx
     {
         public static System.Drawing.PointF Multiply(this System.Drawing.PointF p, float k)

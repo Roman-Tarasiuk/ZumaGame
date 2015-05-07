@@ -2,6 +2,10 @@
 
 namespace Zuma.GameEngine
 {
+    /*			
+		Review VV:
+		    рекомендую генератор реалізувати як нестатичний клас з нестатичними функціями	
+	*/
     static class BallGenerator
     {
         #region                        - Class members
