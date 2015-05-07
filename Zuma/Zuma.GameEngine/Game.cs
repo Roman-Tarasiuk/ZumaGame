@@ -32,6 +32,10 @@ namespace Zuma.GameEngine
         {
             get
             {
+                /*			
+			        Review VV:
+			            слід додати фігурні дужки
+		        */
                 if (_status != GameStatus.Over)
                     return GameResult.Undetermined;
                 return _gameResult;
@@ -61,9 +65,16 @@ namespace Zuma.GameEngine
 
         public void LoadConfig(string configPath)
         {
+            /*			
+                Review VV:
+                    слід додати фігурні дужки
+            */
             if (_status == GameStatus.Playing || _status == GameStatus.Paused)
                 throw new InvalidOperationException("Game is now playing or paused.");
-
+            /*			
+                Review VV:
+                    слід додати фігурні дужки
+            */
             if (_config == null)
                 _config = new GameConfig();
             
@@ -79,6 +90,10 @@ namespace Zuma.GameEngine
 
         public void Play()
         {
+            /*			
+                Review VV:
+                    слід додати фігурні дужки
+            */
             if (_status != GameStatus.Initialized)
                 throw new InvalidOperationException("Game is not initialized or already playing.");
 

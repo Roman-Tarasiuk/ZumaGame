@@ -37,9 +37,17 @@ namespace Zuma.GameEngine
 
         public void Move()
         {
+            /*			
+			    Review VV:
+			        слід додати фігурні дужки,
+                    а валідацію взяти в регіон Validation
+		    */
             if (Balls.Count == 0)
                 throw new InvalidOperationException("No balls in sequence.");
-
+            /*			
+			    Review VV:
+			        на мою думку, логіка цього методу не реалізована
+		    */
 
         }
 

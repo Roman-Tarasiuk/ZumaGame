@@ -18,6 +18,11 @@ namespace Zuma.GameEngine
         {
             get
             {
+                /*			
+                    Review VV:
+                        слід додати фігурні дужки,
+                        а валідацію взяти в регіон Validation
+                */
                 if (_pointsSVG == null)
                     throw new InvalidOperationException("Object is not initialized");
                 return _points;
@@ -33,6 +38,11 @@ namespace Zuma.GameEngine
         {
             get
             {
+                /*			
+                    Review VV:
+                        слід додати фігурні дужки,
+                        а валідацію взяти в регіон Validation
+                */
                 if (_pointsSVG == null)
                     throw new InvalidOperationException("Object is not initialized");
                 return _pointsSVG;
